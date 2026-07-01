@@ -1,0 +1,1497 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>RED CHILLI | Future Dining Redefined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#5f3f3a",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "on-surface": "#e5e2e1",
+                    "secondary": "#ffdb9d",
+                    "on-primary": "#690003",
+                    "on-tertiary-fixed-variant": "#474646",
+                    "inverse-on-surface": "#313030",
+                    "tertiary-container": "#929090",
+                    "surface-container-highest": "#353535",
+                    "on-background": "#e5e2e1",
+                    "on-primary-container": "#5c0002",
+                    "surface-container-low": "#1c1b1b",
+                    "primary-container": "#ff5546",
+                    "on-secondary": "#412d00",
+                    "background": "#131313",
+                    "primary": "#ffb4aa",
+                    "inverse-primary": "#c0000b",
+                    "tertiary-fixed": "#e5e2e1",
+                    "on-primary-fixed-variant": "#930006",
+                    "surface-variant": "#353535",
+                    "on-secondary-container": "#6b4b00",
+                    "error-container": "#93000a",
+                    "secondary-fixed-dim": "#ffba20",
+                    "tertiary-fixed-dim": "#c9c6c5",
+                    "error": "#ffb4ab",
+                    "surface-dim": "#131313",
+                    "surface-container": "#20201f",
+                    "tertiary": "#c9c6c5",
+                    "surface": "#131313",
+                    "on-tertiary-container": "#2a2a29",
+                    "outline": "#b08782",
+                    "on-secondary-fixed": "#271900",
+                    "surface-tint": "#ffb4aa",
+                    "surface-container-lowest": "#0e0e0e",
+                    "secondary-container": "#feb700",
+                    "surface-bright": "#393939",
+                    "primary-fixed": "#ffdad5",
+                    "on-error-container": "#ffdad6",
+                    "secondary-fixed": "#ffdea8",
+                    "surface-container-high": "#2a2a2a",
+                    "on-secondary-fixed-variant": "#5e4200",
+                    "inverse-surface": "#e5e2e1",
+                    "on-tertiary": "#313030",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "on-surface-variant": "#e9bcb6",
+                    "on-primary-fixed": "#410001",
+                    "on-error": "#690005"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "64px",
+                    "container-padding": "24px",
+                    "gutter": "16px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "body-lg": ["Manrope"],
+                    "label-caps": ["Space Grotesk"],
+                    "body-md": ["Manrope"],
+                    "headline-lg": ["Playfair Display"],
+                    "headline-sm": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #131313; color: #e5e2e1; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .glass-dark { background: rgba(0, 0, 0, 0.45); backdrop-filter: blur(24px); border: 1px solid rgba(255, 85, 70, 0.15); }
+        .hex-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l25.98 15v30L30 60 4.02 45V15z' fill-opacity='0.04' fill='%23ffffff' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        .parallax-section { position: relative; overflow: hidden; }
+        .btn-glow:hover { box-shadow: 0 0 20px rgba(255, 85, 70, 0.5); transform: translateY(-2px); transition: all 0.3s ease; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+
+        /* Marquee animations */
+        @keyframes marquee-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        @keyframes marquee-right {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+        }
+        .animate-marquee-left {
+            display: flex;
+            width: max-content;
+            animation: marquee-left 25s linear infinite;
+        }
+        .animate-marquee-right {
+            display: flex;
+            width: max-content;
+            animation: marquee-right 25s linear infinite;
+        }
+        .marquee-container:hover .animate-marquee-left,
+        .marquee-container:hover .animate-marquee-right {
+            animation-play-state: paused;
+        }
+
+        /* Glass Glow Classes */
+        .glass-glow-red {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 85, 70, 0.15);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glass-glow-red:hover {
+            border-color: rgba(255, 85, 70, 0.4);
+            box-shadow: 0 0 30px rgba(255, 85, 70, 0.15);
+            background: rgba(255, 255, 255, 0.04);
+        }
+        .glass-glow-amber {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(254, 183, 0, 0.15);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glass-glow-amber:hover {
+            border-color: rgba(254, 183, 0, 0.4);
+            box-shadow: 0 0 30px rgba(254, 183, 0, 0.15);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        /* Gradient Glow border for Review Form */
+        .glow-border-form {
+            position: relative;
+            background: rgba(19, 19, 19, 0.8);
+            border-radius: 1.5rem;
+            z-index: 1;
+        }
+        .glow-border-form::before {
+            content: '';
+            position: absolute;
+            top: -1px; left: -1px; right: -1px; bottom: -1px;
+            background: linear-gradient(135deg, rgba(255, 85, 70, 0.3) 0%, rgba(254, 183, 0, 0.1) 50%, rgba(0, 242, 254, 0.2) 100%);
+            border-radius: 1.5rem;
+            z-index: -1;
+            transition: opacity 0.5s ease;
+        }
+        .glow-border-form:hover::before {
+            background: linear-gradient(135deg, rgba(255, 85, 70, 0.5) 0%, rgba(254, 183, 0, 0.25) 50%, rgba(0, 242, 254, 0.4) 100%);
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container pt-14">
+<!-- Top Facilities Ticker -->
+<div class="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-background/95 to-background/80 backdrop-blur-xl border-b border-white/10 py-1.5 h-14 overflow-hidden flex flex-col justify-between marquee-container select-none shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
+  <!-- Line 1 -->
+  <div class="flex overflow-hidden text-[9px] font-label-caps tracking-widest text-primary/90 uppercase">
+    <div class="animate-marquee-left flex whitespace-nowrap gap-12 font-bold drop-shadow-[0_0_3px_rgba(255,85,70,0.5)]">
+      <span>VEG & NON-VEG ✦ FAMILY AREA ✦ MOVIE THEATER ✦ WASHROOM ✦ FIRST AID ✦ CAR PARKING ✦ DEPT STORE ✦ SMOKING AREA ✦&nbsp;</span>
+      <span>VEG & NON-VEG ✦ FAMILY AREA ✦ MOVIE THEATER ✦ WASHROOM ✦ FIRST AID ✦ CAR PARKING ✦ DEPT STORE ✦ SMOKING AREA ✦&nbsp;</span>
+    </div>
+  </div>
+  <!-- Line 2 -->
+  <div class="flex overflow-hidden text-[9px] font-label-caps tracking-widest text-secondary/90 uppercase">
+    <div class="animate-marquee-right flex whitespace-nowrap gap-12 font-bold drop-shadow-[0_0_3px_rgba(254,183,0,0.5)]">
+      <span>SMOKING AREA ✦ DEPT STORE ✦ CAR PARKING ✦ FIRST AID ✦ WASHROOM ✦ MOVIE THEATER ✦ FAMILY AREA ✦ VEG & NON-VEG ✦&nbsp;</span>
+      <span>SMOKING AREA ✦ DEPT STORE ✦ CAR PARKING ✦ FIRST AID ✦ WASHROOM ✦ MOVIE THEATER ✦ FAMILY AREA ✦ VEG & NON-VEG ✦&nbsp;</span>
+    </div>
+  </div>
+  <!-- Line 3 -->
+  <div class="flex overflow-hidden text-[9px] font-label-caps tracking-widest text-white/70 uppercase">
+    <div class="animate-marquee-left flex whitespace-nowrap gap-12 font-bold drop-shadow-[0_0_2px_rgba(255,255,255,0.3)]">
+      <span>FAMILY AREA ✦ MOVIE THEATER ✦ WASHROOM ✦ FIRST AID ✦ CAR PARKING ✦ DEPT STORE ✦ SMOKING AREA ✦ VEG & NON-VEG ✦&nbsp;</span>
+      <span>FAMILY AREA ✦ MOVIE THEATER ✦ WASHROOM ✦ FIRST AID ✦ CAR PARKING ✦ DEPT STORE ✦ SMOKING AREA ✦ VEG & NON-VEG ✦&nbsp;</span>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 1: INITIAL DISPLAY -->
+<!-- BACKGROUND VIDEO -->
+  <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0 opacity-60 pointer-events-none">
+    <source src="hero.mp4" type="video/mp4">
+  </video>
+
+  <!-- DARK OVERLAY (Ensures text stays readable over the video) -->
+  <div class="absolute inset-0 bg-gradient-to-b from-[#131313]/80 via-[#131313]/50 to-[#131313] z-0 pointer-events-none"></div>
+<!-- Holographic Portrait Screen Background -->
+<div class="absolute inset-0 flex justify-center items-center z-0 pointer-events-none overflow-hidden select-none">
+  <!-- Neon outline vertical phone/tablet shape container -->
+  <div class="w-[90%] max-w-[420px] h-[80%] max-h-[750px] rounded-[50px] border border-primary/20 bg-gradient-to-b from-primary/5 via-background/10 to-secondary/5 relative shadow-[0_0_80px_rgba(255,85,70,0.15)] flex items-center justify-center overflow-hidden">
+    <!-- Glowing borders with glassmorphism -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,85,70,0.1)_0%,transparent_60%)] animate-pulse"></div>
+    <!-- Glowing light bar at the top/bottom -->
+    <div class="absolute top-0 w-1/2 h-1 bg-gradient-to-r from-transparent via-primary-container/50 to-transparent blur-[1px]"></div>
+    <div class="absolute bottom-0 w-1/2 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent blur-[1px]"></div>
+
+    <!-- Fine grid lines pattern -->
+    <div class="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+
+    <!-- Pulsing play glyph in center to show it's a video player space -->
+    <div class="flex flex-col items-center gap-2 opacity-35 animate-pulse">
+      <span class="material-symbols-outlined text-4xl text-primary-container drop-shadow-[0_0_8px_rgba(255,85,70,0.6)]">play_circle</span>
+      <span class="text-[8px] font-label-caps tracking-[0.3em] text-on-surface uppercase"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Main Hero Content -->
+<div class="relative z-10 flex-1 flex flex-col items-center justify-center text-center">
+<h1 class="font-display-lg text-display-lg max-w-4xl uppercase tracking-tighter mb-unit transition-all duration-700 animate-pulse">
+                FUTURE DINING <span class="text-primary-container">RED CHILLI</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8 opacity-80">
+                Where culinary heritage meets futuristic innovation. A gastronomic journey through the prism of deep spice and digital aesthetics.
+            </p>
+<div class="flex flex-col md:flex-row gap-gutter">
+
+<a href="#contact" class="px-8 py-4 border border-outline text-on-surface font-label-caps text-label-caps rounded-xl hover:bg-white/10 hover:border-white/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all uppercase inline-flex justify-center items-center backdrop-blur-sm shadow-xl">BOOK YOUR TABLE</a>
+</div>
+</div>
+<!-- Horizontal Sections (Categories & Find Us) -->
+<div class="relative z-10 w-full grid grid-cols-1 md:grid-cols-4 gap-gutter mt-12">
+<!-- Categories (Col-Span 3) -->
+<div class="md:col-span-3">
+<h3 class="font-label-caps text-label-caps tracking-[0.2em] mb-6 text-secondary">OUR CATEGORIES</h3>
+<div class="grid grid-cols-4 gap-2 md:gap-6 w-full pb-4">
+  <!-- Vegetarian -->
+  <div class="flex flex-col gap-2 group">
+    <div class="glass-glow-amber rounded-xl md:rounded-2xl overflow-hidden aspect-[3/4] relative flex flex-col justify-end p-2 md:p-4 border border-white/10 hover:border-secondary transition-all duration-500 shadow-xl cursor-pointer">
+      <div class="absolute inset-0 z-0 bg-gradient-to-t from-black/95 via-black/40 to-black/5"></div>
+      <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" data-alt="A lush and vibrant close-up of a premium vegetarian dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOk6EYmChTrS5Nvwr7_2giDCgydh9Mtlsi_uoy43FSNdnPzpQbdphY1aID9tUOvIlgGZAFLCYJHQW5TTJbKjSGIWLSSM1nyp4QVvSG_7GYL1P6kd1PVGwzWKZZI2ae5mmykCVYGqG53v7144iMJZGW_YDQ--rdHKVWo9mCDGbIAvo6kQ497wA-ayKqVK-KbtbLVCrfJYDJoUbfQbmE7Oryip3zBeWhwOK2x8OmneraOqP4sEDidD3AXDLqAsVSFmPMwIIxjkRTLKHR">
+      <div class="relative z-10 flex flex-col gap-0.5 items-center text-center">
+        <span class="material-symbols-outlined text-secondary text-lg md:text-3xl drop-shadow-[0_0_6px_rgba(254,183,0,0.6)]" style="font-variation-settings: 'FILL' 1;">eco</span>
+        <span class="font-display-lg text-[9px] md:text-sm uppercase tracking-tighter md:tracking-widest text-white leading-none">VEG</span>
+      </div>
+    </div>
+    <a href="varieties.html" onclick="localStorage.setItem('targetCategory', 'veg')" class="w-full py-1.5 md:py-3 bg-secondary/10 hover:bg-secondary text-secondary hover:text-background border border-secondary/20 hover:border-secondary font-label-caps text-[8px] md:text-xs tracking-tighter md:tracking-widest rounded-lg transition-all duration-300 uppercase btn-glow block text-center">
+  ORDER
+</a>
+  </div>
+  <!-- Non-Vegetarian -->
+  <div class="flex flex-col gap-2 group">
+    <div class="glass-glow-red rounded-xl md:rounded-2xl overflow-hidden aspect-[3/4] relative flex flex-col justify-end p-2 md:p-4 border border-white/10 hover:border-primary transition-all duration-500 shadow-xl cursor-pointer">
+      <div class="absolute inset-0 z-0 bg-gradient-to-t from-black/95 via-black/40 to-black/5"></div>
+      <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" data-alt="Succulent, slow-roasted non-vegetarian specialty meat dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx7EhTQS_mq8ZHE9D150kM6O7M_BOX8WE9cTtuPeQs2IJXsX4Aqv6pyakyufaXHU-1xzA-0TkrTaLxVBQgXKAMNjVO5EBs2eRyJ6LibJB2zeNhb6V9JpfjVRJ03Lrm_jK96bpyub1NekVoELX9Tzc067CdI5bfoaeZqYsarmC7uZ41mO0yqNXG0dRsRy6Xknc9BjoiQQX8u2TnfhWBvCNplwgNT7RrxBpctHTt9oNzjc9eXR7Z4RGULsMQr_pEw4zdCde-OUXIBYv8">
+      <div class="relative z-10 flex flex-col gap-0.5 items-center text-center">
+        <span class="material-symbols-outlined text-primary text-lg md:text-3xl drop-shadow-[0_0_6px_rgba(255,85,70,0.6)]" style="font-variation-settings: 'FILL' 1;">dinner_dining</span>
+        <span class="font-display-lg text-[9px] md:text-sm uppercase tracking-tighter md:tracking-widest text-white leading-none">NON-VEG</span>
+      </div>
+    </div>
+    <a href="varieties.html" onclick="localStorage.setItem('targetCategory', 'veg')" class="w-full py-1.5 md:py-3 bg-secondary/10 hover:bg-secondary text-secondary hover:text-background border border-secondary/20 hover:border-secondary font-label-caps text-[8px] md:text-xs tracking-tighter md:tracking-widest rounded-lg transition-all duration-300 uppercase btn-glow block text-center">
+  ORDER
+</a>
+  </div>
+  <!-- Royal Dining -->
+  <div class="flex flex-col gap-2 group">
+    <div class="glass-glow-amber rounded-xl md:rounded-2xl overflow-hidden aspect-[3/4] relative flex flex-col justify-end p-2 md:p-4 border border-white/10 hover:border-secondary transition-all duration-500 shadow-xl cursor-pointer">
+      <div class="absolute inset-0 z-0 bg-gradient-to-t from-black/95 via-black/40 to-black/5"></div>
+      <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" data-alt="A grand royal dining table setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbMbyh_TvnIySOWEHonQo__506_8QJgKPQJujHLN8Bs3L_C5c6yVLGmHy7zMq8SpUKfBHXc9NGBz1ojRU2y8hn-7Wwl1Q9cYlVuOppGivwRZzds66L5qYGEvudDmTZXOullN2wvvqeJipGVlhmlcCS7OGEpoWjx5oi8RH5zgRK58fjxe2hK0oWBh6qRRCDDoq6J0SkArBn_f3niI7u9CYs4TJFEMYN9xM7qNmr6L9p0YMHGTO7-8nIpy7hpy9PbAqwPhrCEoo8P6eH">
+      <div class="relative z-10 flex flex-col gap-0.5 items-center text-center">
+        <span class="material-symbols-outlined text-secondary text-lg md:text-3xl drop-shadow-[0_0_6px_rgba(254,183,0,0.6)]" style="font-variation-settings: 'FILL' 1;">crown</span>
+        <span class="font-display-lg text-[9px] md:text-sm uppercase tracking-tighter md:tracking-widest text-white leading-none">SNACKS</span>
+      </div>
+    </div>
+    <a href="varieties.html" onclick="localStorage.setItem('targetCategory', 'veg')" class="w-full py-1.5 md:py-3 bg-secondary/10 hover:bg-secondary text-secondary hover:text-background border border-secondary/20 hover:border-secondary font-label-caps text-[8px] md:text-xs tracking-tighter md:tracking-widest rounded-lg transition-all duration-300 uppercase btn-glow block text-center">
+  ORDER
+</a>
+  </div>
+  <!-- Open Theater -->
+  <div class="flex flex-col gap-2 group">
+    <div class="glass-glow-red rounded-xl md:rounded-2xl overflow-hidden aspect-[3/4] relative flex flex-col justify-end p-2 md:p-4 border border-white/10 hover:border-primary transition-all duration-500 shadow-xl cursor-pointer">
+      <div class="absolute inset-0 z-0 bg-gradient-to-t from-black/95 via-black/40 to-black/5"></div>
+      <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" src="../private_family_room.png">
+      <div class="relative z-10 flex flex-col gap-0.5 items-center text-center">
+        <span class="material-symbols-outlined text-primary text-lg md:text-3xl drop-shadow-[0_0_6px_rgba(255,85,70,0.6)]" style="font-variation-settings: 'FILL' 1;">theaters</span>
+        <span class="font-display-lg text-[9px] md:text-sm uppercase tracking-tighter md:tracking-widest text-white leading-none">PRIVATE FAMILY ROOM</span>
+      </div>
+    </div>
+    <button class="w-full py-1.5 md:py-3 bg-primary-container/20 hover:bg-primary-container text-primary hover:text-on-primary-container border border-primary-container/30 hover:border-primary-container font-label-caps text-[8px] md:text-xs tracking-tighter md:tracking-widest rounded-lg transition-all duration-300 uppercase btn-glow">
+      ORDER
+    </button>
+  </div>
+</div>
+</div>
+<!-- Find Us (Col-Span 1) -->
+<div class="flex flex-col gap-3">
+  <h3 class="font-label-caps text-label-caps tracking-[0.2em] mb-6 text-primary flex items-center gap-2">
+    <span class="material-symbols-outlined text-sm">location_on</span> FIND US
+  </h3>
+  <div class="glass-glow-red p-6 rounded-2xl flex flex-col justify-between border-primary/20 flex-1 min-h-[350px]">
+    <div class="space-y-4">
+      <div class="relative rounded-xl overflow-hidden border border-white/5 shadow-inner bg-black/40 p-2">
+        <!-- Search bar mock -->
+        <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-2.5 py-1.5 text-[10px] text-on-surface-variant mb-2">
+          <span class="material-symbols-outlined text-sm">search</span>
+          <span class="truncate">New Red Chilli Restaurant, Jansath</span>
+        </div>
+
+        <!-- Live Google Map Embed -->
+        <div class="h-32 rounded-lg relative overflow-hidden bg-surface-container border border-white/5">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217.38309816896805!2d77.84589372575283!3d29.337198248138783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c0914a9467df9%3A0xe415275305694e09!2sNEW%20RED%20CHILLI%20RESTAURANT%2C%20JANSATH!5e0!3m2!1sen!2sin!4v1782908174470!5m2!1sen!2sin" class="absolute inset-0 w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+
+      <div class="space-y-1">
+        <p class="font-body-md text-sm text-on-surface font-semibold truncate">New Red Chilli Restaurant</p>
+        <p class="font-body-md text-xs text-on-surface-variant leading-relaxed">Jansath, Uttar Pradesh, India</p>
+      </div>
+    </div>
+
+    <!-- Button converted to anchor tag to open map in new tab -->
+    <a href="https://www.google.com/maps/search/?api=1&query=NEW+RED+CHILLI+RESTAURANT,+JANSATH" target="_blank" class="w-full mt-4 py-3 bg-primary-container text-on-primary-container font-label-caps text-xs tracking-widest rounded-xl hover:bg-primary-container/90 transition-all uppercase flex items-center justify-center gap-2 btn-glow">
+      VIEW MAP <span class="material-symbols-outlined text-sm">north_east</span>
+    </a>
+  </div>
+</div>
+
+<!-- AUTOMATIC SIGNATURE DISHES SLIDE BAR -->
+<section class="py-6 bg-background border-y border-white/5 overflow-hidden select-none">
+  <div class="px-container-padding mb-3 flex justify-between items-center">
+    <h4 class="font-label-caps text-[10px] tracking-[0.2em] text-primary uppercase flex items-center gap-1.5">
+      <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> TODAY'S SPECIALS
+    </h4>
+    <span class="text-[9px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest">AUTOROTATING SELECTION</span>
+  </div>
+  <div class="relative w-full overflow-hidden flex marquee-container">
+    <div class="animate-marquee-left flex gap-6 whitespace-nowrap py-2">
+      <!-- Item 1 -->
+      <div class="glass flex items-center gap-4 p-3 rounded-2xl w-72 flex-shrink-0 border border-white/5 hover:border-primary-container/30 transition-all duration-300">
+        <img class="w-16 h-16 rounded-xl object-cover border border-white/10" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=200&q=80" alt="Cyber Chilli Chicken">
+        <div class="flex flex-col">
+          <span class="font-label-caps text-[10px] text-primary tracking-wider font-bold">SIGNATURE</span>
+          <span class="font-display-lg text-sm text-white font-semibold">CYBER CHILLI CHICKEN</span>
+          <span class="font-label-caps text-xs text-secondary mt-1">★ 4.9 </span>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="glass flex items-center gap-4 p-3 rounded-2xl w-72 flex-shrink-0 border border-white/5 hover:border-secondary/30 transition-all duration-300">
+        <img class="w-16 h-16 rounded-xl object-cover border border-white/10" src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=200&q=80" alt="Neon Veggie Salad">
+        <div class="flex flex-col">
+          <span class="font-label-caps text-[10px] text-secondary tracking-wider font-bold">HEALTHY</span>
+          <span class="font-display-lg text-sm text-white font-semibold">NEON SPICY SALAD</span>
+          <span class="font-label-caps text-xs text-secondary mt-1">★ 4.8 </span>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="glass flex items-center gap-4 p-3 rounded-2xl w-72 flex-shrink-0 border border-white/5 hover:border-primary-container/30 transition-all duration-300">
+        <img class="w-16 h-16 rounded-xl object-cover border border-white/10" src="https://images.unsplash.com/photo-1553618551-fba689030290?auto=format&fit=crop&w=200&q=80" alt="Molecular Crimson Lobster">
+        <div class="flex flex-col">
+          <span class="font-label-caps text-[10px] text-primary tracking-wider font-bold">DELUXE</span>
+          <span class="font-display-lg text-sm text-white font-semibold"></span>
+          <span class="font-label-caps text-xs text-secondary mt-1">★ 5.0 </span>
+        </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="glass flex items-center gap-4 p-3 rounded-2xl w-72 flex-shrink-0 border border-white/5 hover:border-secondary/30 transition-all duration-300">
+        <img class="w-16 h-16 rounded-xl object-cover border border-white/10" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=200&q=80" alt="Cyber Elixir Cocktail">
+        <div class="flex flex-col">
+          <span class="font-label-caps text-[10px] text-secondary tracking-wider font-bold">EXOTIC DRINK</span>
+          <span class="font-display-lg text-sm text-white font-semibold">RED BULL COCKTAIL</span>
+          <span class="font-label-caps text-xs text-secondary mt-1">★ 4.9 </span>
+        </div>
+      </div>
+      <!-- Item 5 -->
+      <div class="glass flex items-center gap-4 p-3 rounded-2xl w-72 flex-shrink-0 border border-white/5 hover:border-primary-container/30 transition-all duration-300">
+        <img class="w-16 h-16 rounded-xl object-cover border border-white/10" src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=200&q=80" alt="Royal Tomahawk Steak">
+        <div class="flex flex-col">
+          <span class="font-label-caps text-[10px] text-primary tracking-wider font-bold">PREMIUM</span>
+          <span class="font-display-lg text-sm text-white font-semibold">TANDOOR</span>
+          <span class="font-label-caps text-xs text-secondary mt-1">★ 5.0 </span>
+        </div>
+      </div>
+
+      <!-- Duplicate items for infinite marquee loop -->
+      <!-- Item 1 -->
+      <div class="glass flex items-center gap-4 p-3 rounded-2xl w-72 flex-shrink-0 border border-white/5 hover:border-primary-container/30 transition-all duration-300">
+        <img class="w-16 h-16 rounded-xl object-cover border border-white/10" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=200&q=80" alt="Cyber Chilli Chicken">
+        <div class="flex flex-col">
+          <span class="font-label-caps text-[10px] text-primary tracking-wider font-bold">SIGNATURE</span>
+          <span class="font-display-lg text-sm text-white font-semibold">CYBER CHILLI CHICKEN</span>
+          <span class="font-label-caps text-xs text-secondary mt-1">★ 4.9 </span>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="glass flex items-center gap-4 p-3 rounded-2xl w-72 flex-shrink-0 border border-white/5 hover:border-secondary/30 transition-all duration-300">
+        <img class="w-16 h-16 rounded-xl object-cover border border-white/10" src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=200&q=80" alt="Neon Veggie Salad">
+        <div class="flex flex-col">
+          <span class="font-label-caps text-[10px] text-secondary tracking-wider font-bold">HEALTHY</span>
+          <span class="font-display-lg text-sm text-white font-semibold">NEON SPICY SALAD</span>
+          <span class="font-label-caps text-xs text-secondary mt-1">★ 4.8 </span>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="glass flex items-center gap-4 p-3 rounded-2xl w-72 flex-shrink-0 border border-white/5 hover:border-primary-container/30 transition-all duration-300">
+        <img class="w-16 h-16 rounded-xl object-cover border border-white/10" src="https://images.unsplash.com/photo-1553618551-fba689030290?auto=format&fit=crop&w=200&q=80" alt="Molecular Crimson Lobster">
+        <div class="flex flex-col">
+          <span class="font-label-caps text-[10px] text-primary tracking-wider font-bold">DELUXE</span>
+          <span class="font-display-lg text-sm text-white font-semibold"></span>
+          <span class="font-label-caps text-xs text-secondary mt-1">★ 5.0 </span>
+        </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="glass flex items-center gap-4 p-3 rounded-2xl w-72 flex-shrink-0 border border-white/5 hover:border-secondary/30 transition-all duration-300">
+        <img class="w-16 h-16 rounded-xl object-cover border border-white/10" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=200&q=80" alt="Cyber Elixir Cocktail">
+        <div class="flex flex-col">
+          <span class="font-label-caps text-[10px] text-secondary tracking-wider font-bold">EXOTIC DRINK</span>
+          <span class="font-display-lg text-sm text-white font-semibold">RED BULL COCKTAIL</span>
+          <span class="font-label-caps text-xs text-secondary mt-1">★ 4.9 </span>
+        </div>
+      </div>
+      <!-- Item 5 -->
+      <div class="glass flex items-center gap-4 p-3 rounded-2xl w-72 flex-shrink-0 border border-white/5 hover:border-primary-container/30 transition-all duration-300">
+        <img class="w-16 h-16 rounded-xl object-cover border border-white/10" src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=200&q=80" alt="Royal Tomahawk Steak">
+        <div class="flex flex-col">
+          <span class="font-label-caps text-[10px] text-primary tracking-wider font-bold">PREMIUM</span>
+          <span class="font-display-lg text-sm text-white font-semibold">ROYAL TOMAHAWK STEAK</span>
+          <span class="font-label-caps text-xs text-secondary mt-1">★ 5.0 </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: AESTHETICS CAROUSEL -->
+<section class="py-section-gap bg-surface-container-lowest relative overflow-hidden" id="aesthetics">
+  <div class="px-container-padding mb-8 flex justify-between items-end">
+    <div>
+      <h2 class="font-display-lg text-headline-lg uppercase mb-2 flex items-center gap-2">
+        OUR AESTHETICS <span class="text-primary-container drop-shadow-[0_0_6px_rgba(255,85,70,0.5)]">🌶️</span>
+      </h2>
+      <div class="w-24 h-1 bg-primary-container"></div>
+    </div>
+    <!-- Navigation Buttons -->
+    <div class="flex gap-3">
+      <button id="aesthetics-prev" class="w-10 h-10 rounded-full glass hover:bg-primary-container hover:text-on-primary-container hover:border-primary-container transition-all duration-300 flex items-center justify-center text-sm font-bold shadow-lg shadow-black/40 cursor-pointer select-none">
+        <span class="material-symbols-outlined text-lg">chevron_left</span>
+      </button>
+      <button id="aesthetics-next" class="w-10 h-10 rounded-full glass hover:bg-primary-container hover:text-on-primary-container hover:border-primary-container transition-all duration-300 flex items-center justify-center text-sm font-bold shadow-lg shadow-black/40 cursor-pointer select-none">
+        <span class="material-symbols-outlined text-lg">chevron_right</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Slides Track -->
+  <div id="aesthetics-slider" class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-gutter px-container-padding pb-4 scroll-smooth">
+    <!-- Interior 1 -->
+    <div class="snap-center flex-shrink-0 w-[85%] sm:w-[45%] md:w-[31%] aspect-[4/5] glass-glow-amber rounded-3xl overflow-hidden relative group">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="../1000041056.jpg">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10 flex flex-col justify-end p-6">
+        <p class="font-label-caps text-label-caps text-secondary mb-1">ATMOSPHERE</p>
+        <h4 class="font-headline-sm text-lg text-white mb-2 font-bold uppercase">ELEGANT DINING</h4>
+        <a href="#contact" class="mt-2 w-max px-5 py-2 bg-secondary text-background hover:bg-secondary/90 font-label-caps text-[10px] tracking-wider font-bold rounded-lg transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 btn-glow uppercase inline-block">RESERVE NOW</a>
+      </div>
+    </div>
+    <!-- Interior 2 -->
+    <div class="snap-center flex-shrink-0 w-[85%] sm:w-[45%] md:w-[31%] aspect-[4/5] glass-glow-red rounded-3xl overflow-hidden relative group">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="../1000041057.jpg">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10 flex flex-col justify-end p-6">
+        <p class="font-label-caps text-label-caps text-primary mb-1">MIXOLOGY</p>
+        <h4 class="font-headline-sm text-lg text-white mb-2 font-bold uppercase">THE MAIN BAR</h4>
+        <a href="#contact" class="mt-2 w-max px-5 py-2 bg-primary text-on-primary hover:bg-primary/90 font-label-caps text-[10px] tracking-wider font-bold rounded-lg transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 btn-glow uppercase inline-block">RESERVE NOW</a>
+      </div>
+    </div>
+    <!-- Interior 3 -->
+    <div class="snap-center flex-shrink-0 w-[85%] sm:w-[45%] md:w-[31%] aspect-[4/5] glass-glow-amber rounded-3xl overflow-hidden relative group">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="../1000041065.jpg">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10 flex flex-col justify-end p-6">
+        <p class="font-label-caps text-label-caps text-secondary mb-1">EXPERIENCE</p>
+        <h4 class="font-headline-sm text-lg text-white mb-2 font-bold uppercase">ATMOSPHERIC LIGHT</h4>
+        <a href="#contact" class="mt-2 w-max px-5 py-2 bg-secondary text-background hover:bg-secondary/90 font-label-caps text-[10px] tracking-wider font-bold rounded-lg transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 btn-glow uppercase inline-block">RESERVE NOW</a>
+      </div>
+    </div>
+    <!-- Interior 4 (For 4 dots visual) -->
+    <div class="snap-center flex-shrink-0 w-[85%] sm:w-[45%] md:w-[31%] aspect-[4/5] glass-glow-red rounded-3xl overflow-hidden relative group">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="../1000041071.jpg">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10 flex flex-col justify-end p-6">
+        <p class="font-label-caps text-label-caps text-primary mb-1">LOUNGE</p>
+        <h4 class="font-headline-sm text-lg text-white mb-2 font-bold uppercase">VIP CABINS</h4>
+        <a href="#contact" class="mt-2 w-max px-5 py-2 bg-primary text-on-primary hover:bg-primary/90 font-label-caps text-[10px] tracking-wider font-bold rounded-lg transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 btn-glow uppercase inline-block">RESERVE NOW</a>
+      </div>
+    </div>
+    <!-- Interior 5 -->
+    <div class="snap-center flex-shrink-0 w-[85%] sm:w-[45%] md:w-[31%] aspect-[4/5] glass-glow-amber rounded-3xl overflow-hidden relative group">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="../Screenshot%202026-07-01%20005906.png">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10 flex flex-col justify-end p-6">
+        <p class="font-label-caps text-label-caps text-secondary mb-1">EXTERIOR</p>
+        <h4 class="font-headline-sm text-lg text-white mb-2 font-bold uppercase">THE FACADE</h4>
+        <a href="#contact" class="mt-2 w-max px-5 py-2 bg-secondary text-background hover:bg-secondary/90 font-label-caps text-[10px] tracking-wider font-bold rounded-lg transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 btn-glow uppercase inline-block">RESERVE NOW</a>
+      </div>
+    </div>
+  </div>
+
+<!-- SECTION 3: REVIEWS & FEEDBACK -->
+<section class="py-section-gap bg-background relative overflow-hidden" id="reviews">
+  <div class="px-container-padding mb-8 flex flex-col items-center text-center">
+    <h2 class="font-display-lg text-headline-lg uppercase mb-2">CUSTOMER REVIEWS</h2>
+    <div class="flex items-center gap-2">
+      <span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">READ OUR STORIES</span>
+      <div class="flex text-secondary gap-0.5">
+        <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+        <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Smooth Auto-Scrolling Reviews Marquee (15 unique cards) -->
+  <div class="relative w-full overflow-hidden flex marquee-container mb-12 select-none">
+    <div class="animate-marquee-left flex gap-6 whitespace-nowrap py-4 hover:[animation-play-state:paused]" style="animation-duration: 90s;" id="reviews-marquee">
+      <!-- Card 1 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Siens R.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Incredible dining experience! The atmosphere was perfect, the food exquisite! The deep spice fusion feels futuristic yet matches classic heritage."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">2 days ago</span>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Mark S.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Superb service and a stunning venue. Highly recommend Red Chilli. Visual excellence combined with molecular gastronomy flares."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">5 days ago</span>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Alahe K.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Awesome atmosphere, molecular culinary magic and unmatched vibes! A feast for the eyes and the palate alike."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">5 days ago</span>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Alexander Vane</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "An absolute masterpiece of future dining. The chilli infusion was mind-blowing and the aesthetic ambient lighting is simply world class."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">1 week ago</span>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Chloe M.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "The neon ambience is so photogenic, and the dishes taste even better than they look!"
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">1 week ago</span>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Daniel K.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "A perfect blend of technology and gastronomy. The staff was incredibly welcoming and attentive."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">2 weeks ago</span>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Sophia L.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "The virtual elements combined with the exquisite food made it an unforgettable night."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">2 weeks ago</span>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Marcus P.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Simply elite. The Royal Tomahawk Steak is a must-try for anyone visiting this place."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">3 weeks ago</span>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Emma W.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Sensory overload in the best way possible. Every single dish is a stunning work of art."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">1 month ago</span>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Liam N.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Amazing vibes, futuristic tech, and delicious deep spices that linger perfectly."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">1 month ago</span>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Olivia T.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Best dining experience in London. Hands down the most unique venue I've ever seen."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">2 months ago</span>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Ethan J.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "The cocktails at the Main Bar are incredible. Will definitely be returning soon!"
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">2 months ago</span>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Ava C.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Highly creative menu. The vegan options were spectacular and full of flavor."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">3 months ago</span>
+      </div>
+
+      <!-- Card 14 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Noah B.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "A culinary adventure. The service was top-tier and the lighting is gorgeous."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">3 months ago</span>
+      </div>
+
+      <!-- Card 15 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Isabella H.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Pure magic. From the interactive menu to the final bite, everything was flawless."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">3 months ago</span>
+      </div>
+
+      <!-- Duplicated Card 1 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Siens R.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Incredible dining experience! The atmosphere was perfect, the food exquisite! The deep spice fusion feels futuristic yet matches classic heritage."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">2 days ago</span>
+      </div>
+
+      <!-- Duplicated Card 2 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Mark S.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Superb service and a stunning venue. Highly recommend Red Chilli. Visual excellence combined with molecular gastronomy flares."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">5 days ago</span>
+      </div>
+
+      <!-- Duplicated Card 3 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Alahe K.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Awesome atmosphere, molecular culinary magic and unmatched vibes! A feast for the eyes and the palate alike."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">5 days ago</span>
+      </div>
+
+      <!-- Duplicated Card 4 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Alexander Vane</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "An absolute masterpiece of future dining. The chilli infusion was mind-blowing and the aesthetic ambient lighting is simply world class."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">1 week ago</span>
+      </div>
+
+      <!-- Duplicated Card 5 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Chloe M.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "The neon ambience is so photogenic, and the dishes taste even better than they look!"
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">1 week ago</span>
+      </div>
+
+      <!-- Duplicated Card 6 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Daniel K.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "A perfect blend of technology and gastronomy. The staff was incredibly welcoming and attentive."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">2 weeks ago</span>
+      </div>
+
+      <!-- Duplicated Card 7 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Sophia L.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "The virtual elements combined with the exquisite food made it an unforgettable night."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">2 weeks ago</span>
+      </div>
+
+      <!-- Duplicated Card 8 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Marcus P.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Simply elite. The Royal Tomahawk Steak is a must-try for anyone visiting this place."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">3 weeks ago</span>
+      </div>
+
+      <!-- Duplicated Card 9 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Emma W.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Sensory overload in the best way possible. Every single dish is a stunning work of art."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">1 month ago</span>
+      </div>
+
+      <!-- Duplicated Card 10 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Liam N.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Amazing vibes, futuristic tech, and delicious deep spices that linger perfectly."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">1 month ago</span>
+      </div>
+
+      <!-- Duplicated Card 11 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Olivia T.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Best dining experience in London. Hands down the most unique venue I've ever seen."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">2 months ago</span>
+      </div>
+
+      <!-- Duplicated Card 12 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Ethan J.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "The cocktails at the Main Bar are incredible. Will definitely be returning soon!"
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">2 months ago</span>
+      </div>
+
+      <!-- Duplicated Card 13 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Ava C.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Highly creative menu. The vegan options were spectacular and full of flavor."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">3 months ago</span>
+      </div>
+
+      <!-- Duplicated Card 14 -->
+      <div class="glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Noah B.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "A culinary adventure. The service was top-tier and the lighting is gorgeous."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">3 months ago</span>
+      </div>
+
+      <!-- Duplicated Card 15 -->
+      <div class="glass-glow-amber p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal">
+        <div>
+          <div class="flex justify-between items-start mb-2">
+            <div>
+              <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">Isabella H.</h4>
+              <div class="flex text-secondary gap-0.5 mt-1">
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+          </div>
+          <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+            "Pure magic. From the interactive menu to the final bite, everything was flawless."
+          </p>
+        </div>
+        <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">3 months ago</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review Form (Centered below) -->
+  <div class="px-container-padding max-w-xl mx-auto">
+    <div class="space-y-4 text-center mb-6">
+      <h3 class="font-display-lg text-headline-md uppercase">GIVE US A REVIEW</h3>
+      <p class="font-label-caps text-[10px] text-primary tracking-widest uppercase">WE VALUE YOUR FEEDBACK</p>
+    </div>
+    <!-- Gradient border glass form wrapper -->
+    <div class="glow-border-form p-6 md:p-8 border border-white/5">
+      <form id="review-form" class="space-y-5 relative z-10">
+        <div class="space-y-2 text-left">
+          <label class="font-label-caps text-[10px] tracking-widest block text-primary font-bold">YOUR FULL NAME</label>
+          <input id="form-name" class="w-full bg-surface-container-high/30 border border-white/10 rounded-xl px-4 py-3 focus:border-primary-container focus:ring-1 focus:ring-primary-container/30 transition-all text-on-surface placeholder:text-on-surface-variant/40" placeholder="e.g., Alex Rivera" type="text" required>
+        </div>
+        <div class="space-y-2 text-left">
+          <label class="font-label-caps text-[10px] tracking-widest block text-primary font-bold">WRITE YOUR EXPERIENCE</label>
+          <textarea id="form-text" class="w-full bg-surface-container-high/30 border border-white/10 rounded-xl px-4 py-3 focus:border-primary-container focus:ring-1 focus:ring-primary-container/30 transition-all text-on-surface placeholder:text-on-surface-variant/40" placeholder="Share your experience with us..." rows="4" required></textarea>
+        </div>
+        <button class="w-full py-4 bg-gradient-to-r from-primary-container to-primary hover:from-primary hover:to-primary-container text-on-primary-container font-label-caps text-xs tracking-widest rounded-xl transition-all duration-300 uppercase btn-glow flex items-center justify-center gap-2 font-bold shadow-lg shadow-primary-container/20" type="submit">
+          SUBMIT REVIEW <span class="material-symbols-outlined text-sm">star</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATIONS & CONTACT SECTION -->
+<section class="py-section-gap px-container-padding bg-surface-container-lowest border-t border-white/5 relative" id="contact">
+  <div class="flex flex-col items-center mb-10 text-center">
+    <div class="mb-4 text-3xl drop-shadow-[0_0_10px_rgba(255,85,70,0.6)]">🌶️</div>
+    <h2 class="font-display-lg text-headline-lg bg-gradient-to-r from-primary-container via-primary to-secondary bg-clip-text text-transparent uppercase tracking-wider font-extrabold">RESERVATIONS & CONTACT</h2>
+    <div class="w-32 h-1 bg-gradient-to-r from-primary-container to-secondary mt-3"></div>
+  </div>
+
+  <div class="max-w-2xl mx-auto glass-glow-red p-8 md:p-10 rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden">
+    <!-- Neon grid accent lines -->
+    <div class="absolute inset-0 bg-gradient-to-br from-primary-container/5 via-transparent to-secondary/5 pointer-events-none"></div>
+    <div class="absolute -right-16 -top-16 w-36 h-36 rounded-full bg-primary-container/10 blur-3xl"></div>
+    <div class="absolute -left-16 -bottom-16 w-36 h-36 rounded-full bg-secondary/10 blur-3xl"></div>
+
+    <div class="space-y-8 relative z-10">
+      <!-- Address item -->
+      <div class="flex gap-4 items-start">
+        <div class="w-12 h-12 rounded-2xl glass border border-primary/20 flex items-center justify-center flex-shrink-0 text-primary">
+          <span class="material-symbols-outlined text-xl">location_on</span>
+        </div>
+        <div class="space-y-1">
+          <h5 class="font-label-caps text-[10px] tracking-widest text-primary font-bold">ADDRESS</h5>
+          <p class="font-body-md text-sm text-on-surface opacity-90">123 GOURMET STREET, LONDON, W1 4A3</p>
+        </div>
+      </div>
+
+      <!-- Phone item -->
+      <div class="flex gap-4 items-start">
+        <div class="w-12 h-12 rounded-2xl glass border border-secondary/20 flex items-center justify-center flex-shrink-0 text-secondary">
+          <span class="material-symbols-outlined text-xl">phone</span>
+        </div>
+        <div class="space-y-1">
+          <h5 class="font-label-caps text-[10px] tracking-widest text-secondary font-bold">PHONE</h5>
+          <p class="font-body-md text-sm text-on-surface opacity-90">+44 (20) 7946 0192</p>
+        </div>
+      </div>
+
+      <!-- Email item -->
+      <div class="flex gap-4 items-start">
+        <div class="w-12 h-12 rounded-2xl glass border border-primary/20 flex items-center justify-center flex-shrink-0 text-primary">
+          <span class="material-symbols-outlined text-xl">mail</span>
+        </div>
+        <div class="space-y-1">
+          <h5 class="font-label-caps text-[10px] tracking-widest text-primary font-bold">EMAIL</h5>
+          <p class="font-body-md text-sm text-on-surface opacity-90 uppercase">INFO@REDCHILLI.COM</p>
+        </div>
+      </div>
+
+      <!-- Divider line -->
+      <div class="w-full h-px bg-white/10 my-4"></div>
+
+      <!-- Socials Media icons -->
+      <div class="flex justify-center gap-6 py-2">
+        <a href="#" class="w-11 h-11 rounded-full glass border border-white/10 hover:border-primary hover:text-primary transition-all duration-300 flex items-center justify-center hover:-translate-y-1 shadow-lg cursor-pointer">
+          <span class="material-symbols-outlined text-lg">public</span>
+        </a>
+        <a href="#" class="w-11 h-11 rounded-full glass border border-white/10 hover:border-primary hover:text-primary transition-all duration-300 flex items-center justify-center hover:-translate-y-1 shadow-lg cursor-pointer">
+          <span class="material-symbols-outlined text-lg">thumb_up</span>
+        </a>
+        <a href="#" class="w-11 h-11 rounded-full glass border border-white/10 hover:border-secondary hover:text-secondary transition-all duration-300 flex items-center justify-center hover:-translate-y-1 shadow-lg cursor-pointer">
+          <span class="material-symbols-outlined text-lg">chat</span>
+        </a>
+        <a href="#" class="w-11 h-11 rounded-full glass border border-white/10 hover:border-secondary hover:text-secondary transition-all duration-300 flex items-center justify-center hover:-translate-y-1 shadow-lg cursor-pointer">
+          <span class="material-symbols-outlined text-lg">star</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Copyright Bar -->
+<footer class="py-6 bg-background border-t border-white/5 text-center select-none">
+  <p class="font-label-caps text-[9px] text-on-surface-variant opacity-50 uppercase tracking-widest leading-loose">
+    &copy; 2026 RED CHILLI. ALL RIGHTS RESERVED. | PRIVACY POLICY | TERMS
+  </p>
+</footer>
+
+<!-- Interactive Carousel JavaScript Logic -->
+<script>
+  function setupCarousel(sliderId, prevBtnId, nextBtnId, dotsContainerId) {
+    const slider = document.getElementById(sliderId);
+    const prevBtn = document.getElementById(prevBtnId);
+    const nextBtn = document.getElementById(nextBtnId);
+    const dotsContainer = document.getElementById(dotsContainerId);
+    
+    if (!slider || !prevBtn || !nextBtn) return;
+    
+    const children = Array.from(slider.children);
+    const dots = dotsContainer ? Array.from(dotsContainer.children) : [];
+    
+    function getActiveIndex() {
+      const scrollWidth = slider.scrollWidth - slider.clientWidth;
+      if (scrollWidth <= 0) return 0;
+      const progress = slider.scrollLeft / scrollWidth;
+      return Math.min(dots.length - 1, Math.round(progress * (dots.length - 1)));
+    }
+    
+    function updateDots() {
+      if (dots.length === 0) return;
+      const activeIdx = getActiveIndex();
+      
+      dots.forEach((dot, idx) => {
+        if (idx === activeIdx) {
+          dot.className = "w-6 h-2 rounded-full bg-primary-container shadow-[0_0_8px_rgba(255,85,70,0.6)] cursor-pointer transition-all duration-300";
+        } else {
+          dot.className = "w-2 h-2 rounded-full bg-white/20 hover:bg-white/40 cursor-pointer transition-all duration-300";
+        }
+      });
+    }
+
+    function slideTo(direction) {
+      const itemWidth = children[0].offsetWidth;
+      const gap = 16; // gap-gutter or gap-4
+      const scrollAmount = direction === 'next' ? (itemWidth + gap) : -(itemWidth + gap);
+      
+      slider.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+    
+    prevBtn.addEventListener('click', () => slideTo('prev'));
+    nextBtn.addEventListener('click', () => slideTo('next'));
+    
+    slider.addEventListener('scroll', updateDots);
+    
+    // Dot click functionality
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        const itemWidth = children[0].offsetWidth;
+        const gap = 16;
+        const targetScrollLeft = index * (itemWidth + gap);
+        slider.scrollTo({
+          left: targetScrollLeft,
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Auto-scroll loop
+    let autoScrollInterval = setInterval(() => {
+      const isAtEnd = slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 5;
+      if (isAtEnd) {
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        slideTo('next');
+      }
+    }, 6000);
+    
+    // Pause auto-scroll on hover/interaction
+    function resetAutoScroll() {
+      clearInterval(autoScrollInterval);
+      autoScrollInterval = setInterval(() => {
+        const isAtEnd = slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 5;
+        if (isAtEnd) {
+          slider.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          slideTo('next');
+        }
+      }, 6000);
+    }
+    
+    slider.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+    slider.addEventListener('mouseleave', resetAutoScroll);
+    slider.addEventListener('touchstart', () => clearInterval(autoScrollInterval), { passive: true });
+    slider.addEventListener('touchend', resetAutoScroll);
+    prevBtn.addEventListener('click', resetAutoScroll);
+    nextBtn.addEventListener('click', resetAutoScroll);
+  }
+
+  // Setup AESTHETICS and REVIEWS sliders
+  setupCarousel('aesthetics-slider', 'aesthetics-prev', 'aesthetics-next', 'aesthetics-dots');
+
+  // Submit Review Form Interactivity
+  const reviewForm = document.getElementById('review-form');
+  if (reviewForm) {
+    reviewForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const nameInput = document.getElementById('form-name');
+      const textInput = document.getElementById('form-text');
+      
+      if (!nameInput.value.trim() || !textInput.value.trim()) return;
+
+      const newName = nameInput.value.trim();
+      const newText = textInput.value.trim();
+
+      // Create new review card HTML element
+      const reviewMarquee = document.getElementById('reviews-marquee');
+      if (reviewMarquee) {
+        const newCard = document.createElement('div');
+        newCard.className = "glass-glow-red p-5 rounded-2xl border border-white/10 flex flex-col justify-between h-[180px] w-[320px] flex-shrink-0 whitespace-normal animate-pulse";
+        newCard.innerHTML = `
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <div>
+                <h4 class="font-display-lg text-sm font-bold text-white uppercase tracking-wider">${newName}</h4>
+                <div class="flex text-secondary gap-0.5 mt-1">
+                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+              </div>
+              <span class="material-symbols-outlined text-white/10 text-3xl">format_quote</span>
+            </div>
+            <p class="font-body-md text-xs text-on-surface-variant opacity-80 leading-relaxed italic">
+              "${newText}"
+            </p>
+          </div>
+          <span class="text-[8px] font-label-caps text-on-surface-variant opacity-50 uppercase tracking-widest mt-2">Just now</span>
+        `;
+        
+        // Insert new review at the beginning of marquee
+        reviewMarquee.insertBefore(newCard, reviewMarquee.firstChild);
+
+        // Reset form
+        nameInput.value = '';
+        textInput.value = '';
+        
+        // Create custom alert notification toast
+        const toast = document.createElement('div');
+        toast.className = "fixed bottom-5 right-5 z-100 glass-glow-red p-4 rounded-xl shadow-2xl flex items-center gap-3 border border-primary-container/30 bg-background/90 backdrop-blur-xl animate-bounce";
+        toast.innerHTML = `
+          <span class="material-symbols-outlined text-primary-container text-xl animate-pulse">check_circle</span>
+          <div class="flex flex-col gap-0.5">
+            <span class="text-xs font-label-caps text-white tracking-widest uppercase font-bold">REVIEW SUBMITTED</span>
+            <span class="text-[10px] text-on-surface-variant leading-none">Thank you for sharing your experience!</span>
+          </div>
+        `;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 4000);
+      }
+    });
+  }
+</script>
+</body>
+</html>

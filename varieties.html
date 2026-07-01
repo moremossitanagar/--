@@ -1,0 +1,245 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>RED CHILLI MENU | Digital Gastronomy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "outline-variant": "#5f3f3a",
+              "on-surface": "#e5e2e1",
+              "secondary": "#ffdb9d",
+              "on-primary": "#690003",
+              "background": "#131313",
+              "primary-container": "#ff5546",
+              "primary": "#ffb4aa",
+              "surface-container": "#20201f",
+              "surface-container-high": "#2a2a2a",
+              "surface-container-lowest": "#0e0e0e"
+            },
+            "fontFamily": {
+              "display-lg": ["Playfair Display"],
+              "body-md": ["Manrope"],
+              "label-caps": ["Space Grotesk"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { background-color: #131313; color: #e5e2e1; overflow-x: hidden; }
+        .glass-glow-red {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 85, 70, 0.12);
+        }
+        .glass-glow-red:hover {
+            border-color: rgba(255, 85, 70, 0.35);
+            box-shadow: 0 0 25px rgba(255, 85, 70, 0.12);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Category Slider Styling */
+        .category-tab.active {
+            background: linear-gradient(135deg, #ff5546 0%, #ffb4aa 100%);
+            color: #690003;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(255, 85, 70, 0.4);
+        }
+        
+        /* Veg / Non-Veg Indicator Boxes */
+        .food-tag-veg { border: 2px solid #4CAF50; }
+        .food-tag-veg::after { content: ''; display: block; width: 8px; height: 8px; background: #4CAF50; border-radius: 50%; }
+        .food-tag-nonveg { border: 2px solid #F44336; }
+        .food-tag-nonveg::after { content: ''; display: block; width: 8px; height: 8px; background: #F44336; border-radius: 50%; }
+</style>
+</head>
+<body class="font-body-md text-on-surface select-none pb-12">
+
+<div class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-primary-container/20 via-background to-secondary/10 border-b border-white/10 h-12 flex items-center justify-between px-6 backdrop-blur-md">
+    <div class="flex items-center gap-2 text-xs font-label-caps text-secondary">
+        <span class="material-symbols-outlined text-sm animate-spin">percent</span>
+        <span>FLAT ₹50 OFF ON ALL ORDERS ABOVE ₹1500</span>
+    </div>
+    <div class="bg-white/5 border border-white/20 text-[10px] font-bold px-2 py-0.5 rounded text-primary tracking-widest">HPY80</div>
+</div>
+
+<div class="fixed top-12 left-0 w-full z-40 bg-background/90 backdrop-blur-xl border-b border-white/5 py-4 px-4 shadow-lg shadow-black/50">
+    <div class="max-w-4xl mx-auto flex items-center justify-between">
+        <a href="shan.html" class="font-display-lg text-sm text-white flex items-center tracking-tighter uppercase mr-4">
+            ← RED <span class="text-primary-container ml-1 font-bold">CHILLI</span>
+        </a>
+        <div id="category-slider" class="flex gap-3 overflow-x-auto no-scrollbar snap-x scroll-smooth flex-1 justify-end">
+            <button onclick="switchCategory('all')" class="category-tab active snap-center flex-shrink-0 px-5 py-2 rounded-xl border border-white/10 text-xs font-label-caps tracking-widest uppercase transition-all duration-300">
+                ALL ITEMS
+            </button>
+            <button onclick="switchCategory('veg')" class="category-tab snap-center flex-shrink-0 px-5 py-2 rounded-xl border border-white/10 text-xs font-label-caps tracking-widest uppercase transition-all duration-300 flex items-center gap-2">
+                <span class="food-tag-veg flex items-center justify-center w-3 h-3 rounded-sm bg-transparent"></span> VEGETARIAN
+            </button>
+            <button onclick="switchCategory('nonveg')" class="category-tab snap-center flex-shrink-0 px-5 py-2 rounded-xl border border-white/10 text-xs font-label-caps tracking-widest uppercase transition-all duration-300 flex items-center gap-2">
+                <span class="food-tag-nonveg flex items-center justify-center w-3 h-3 rounded-sm bg-transparent"></span> NON-VEG
+            </button>
+            <button onclick="switchCategory('snacks')" class="category-tab snap-center flex-shrink-0 px-5 py-2 rounded-xl border border-white/10 text-xs font-label-caps tracking-widest uppercase transition-all duration-300 flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm text-secondary">fastfood</span> SNACKS
+            </button>
+        </div>
+    </div>
+</div>
+
+<main class="max-w-4xl mx-auto px-4 mt-40">
+    
+    <div class="menu-section-wrapper mb-10" data-category="veg">
+        <h2 class="font-display-lg text-xl tracking-wide uppercase border-b border-white/5 pb-2 mb-6 text-secondary flex items-center gap-2">
+            <span class="material-symbols-outlined text-emerald-500">potted_plant</span> VEGETARIAN MAINS & ROTI
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="veg-menu-container">
+            </div>
+    </div>
+
+    <div class="menu-section-wrapper mb-10" data-category="nonveg">
+        <h2 class="font-display-lg text-xl tracking-wide uppercase border-b border-white/5 pb-2 mb-6 text-primary-container flex items-center gap-2">
+            <span class="material-symbols-outlined text-red-500">dinner_dining</span> NON-VEGETARIAN DELICACIES
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="nonveg-menu-container">
+            </div>
+    </div>
+
+    <div class="menu-section-wrapper mb-10" data-category="snacks">
+        <h2 class="font-display-lg text-xl tracking-wide uppercase border-b border-white/5 pb-2 mb-6 text-amber-400 flex items-center gap-2">
+            <span class="material-symbols-outlined text-amber-400">lunch_dining</span> APPETIZERS & SNACKS
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="snacks-menu-container">
+            </div>
+    </div>
+</main>
+
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-amber-500 text-neutral-900 font-label-caps text-xs px-6 py-3 rounded-full flex items-center gap-2 shadow-xl shadow-black/80 font-bold tracking-widest cursor-pointer hover:scale-105 transition-transform duration-300">
+    <span class="material-symbols-outlined text-sm">restaurant_menu</span> BROWSE FULL MENU
+</div>
+
+<script>
+    // Parsed and normalized source data with distinct, dish-accurate photography
+    const menuData = {
+        veg: [
+            { name: "Paneer Chilli", price: 150, desc: "Crispy cottage cheese chunks tossed in hot aromatic chili pepper oil & dark soy glaze.", tag: "veg", img: "https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?auto=format&fit=crop&w=250&q=80" },
+            { name: "Dal Makhani", price: 199, desc: "Classic black lentils slow-cooked overnight with churned white butter and rich dairy cream.", tag: "veg", img: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=250&q=80" },
+            { name: "Kadhai Paneer", price: 250, desc: "Paneer batons stir-fried with thick bell pepper strips in fresh pounded kadhai masala.", tag: "veg", img: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=250&q=80" },
+            { name: "Shahi Paneer", price: 200, desc: "Tender cottage cheese cubes simmered beautifully in a luxurious creamy golden cashew gravy.", tag: "veg", img: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=250&q=80" },
+            { name: "Paneer Malai Tikka", price: 400, desc: "Clay-oven roasted premium paneer pillows marinated gently in rich curd cream and white pepper dust.", tag: "veg", img: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=250&q=80" },
+            { name: "Paneer Tikka Satvik", price: 250, desc: "Pure aromatic wood-fired skewered paneer, prepared strictly without onions or raw garlic.", tag: "veg", img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=250&q=80" },
+            { name: "Veg Malai Chaap", price: 250, desc: "Grilled wholesome soy skewers dripping with seasoned heavy cream, butter, and black salt.", tag: "veg", img: "https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=250&q=80" },
+            { name: "Veg Tandoori Chaap", price: 180, desc: "Fiery red skewered soy chops charred inside the clay oven with spicy mustard-oil yogurt marinade.", tag: "veg", img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=250&q=80" },
+            { name: "Paneer Tikka", price: 200, desc: "Traditional spicy charcoal-grilled cottage cheese block arrangements served with fresh mint chutney.", tag: "veg", img: "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=250&q=80" },
+            { name: "Rumali Roti", price: 10, desc: "Paper-thin soft handkerchief flatbread stretched perfectly over an inverted hot wok.", tag: "veg", img: "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=250&q=80" },
+            { name: "Tandoori Roti", price: 10, desc: "Whole wheat rustic flatbread baked right against the inner flaming walls of a clay tandoor tank.", tag: "veg", img: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=250&q=80" },
+            { name: "Butter Naan", price: 40, desc: "Leavened refined flour flatbread glistening with layered clarified table butter drops.", tag: "veg", img: "https://images.unsplash.com/photo-1626200419188-39e2dc113df3?auto=format&fit=crop&w=250&q=80" },
+            { name: "Khabuja Roti", price: 15, desc: "A special artisan traditional puffed bread variant perfect with rich copper-handi curries.", tag: "veg", img: "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=250&q=80" },
+            { name: "Lachha Paratha", price: 30, desc: "Multi-layered flaky whole-wheat coiled bread baked to a beautiful golden-brown crisp state.", tag: "veg", img: "https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?auto=format&fit=crop&w=250&q=80" },
+            { name: "Garlic Naan", price: 60, desc: "Leavened oven flatbread packed generously with fine minced garlic shards and aromatic cilantro.", tag: "veg", img: "https://images.unsplash.com/photo-1585238341267-1cbff2a44ae9?auto=format&fit=crop&w=250&q=80" }
+        ],
+        nonveg: [
+            { name: "Mutton Rogan Josh", price: 199, desc: "Signature Kashmiri rich slow-stewed lamb dish highlighting brilliant red oil slick roots.", tag: "nonveg", img: "https://images.unsplash.com/photo-1545247181-516773cae7bc?auto=format&fit=crop&w=250&q=80" },
+            { name: "Mutton Korma", price: 199, desc: "Tender goat shoulder chunks slow braised in aromatic brown onion oil and fine paste.", tag: "nonveg", img: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=250&q=80" },
+            { name: "Mutton Kadhai", price: 199, desc: "Wok-fried premium meat tossed inside robust tomato base and heavy crushed black pepper.", tag: "nonveg", img: "https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=250&q=80" },
+            { name: "Mutton Laal Maas", price: 199, desc: "Fiery traditional Rajasthani warrior meat recipe fueled by sharp Mathania red chilies.", tag: "nonveg", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=250&q=80" },
+            { name: "Mutton Chaap", price: 199, desc: "Flattened spicy meat ribs slow-fried pan configurations with dense roasted grain crusting.", tag: "nonveg", img: "https://images.unsplash.com/photo-1603048297172-c92544798d5e?auto=format&fit=crop&w=250&q=80" },
+            { name: "Mutton Handi", price: 600, desc: "Large deep clay container configuration stew loaded with fall-apart tender bone-in whole meat cutlets.", tag: "nonveg", img: "https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?auto=format&fit=crop&w=250&q=80" },
+            { name: "Mutton Raan Tandoori", price: 1499, desc: "Whole elite leg of lamb slow roasted for hours, heavily glazed with premium spice emulsions.", tag: "nonveg", img: "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Handi", price: 400, desc: "Boneless chicken thighs cooked inside sealed clay woks with earthy rich butter gravies.", tag: "nonveg", img: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Tikka", price: 199, desc: "Charcoal smoky meat cubes skewered with red bell peppers and classic tangy red powder seasoning.", tag: "nonveg", img: "https://images.unsplash.com/photo-1597289124948-688c1a35cb48?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Kadhai", price: 199, desc: "Stir-fried heavy chicken pieces blended nicely into dry tomato reductions and green strings.", tag: "nonveg", img: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Lahori", price: 180, desc: "Flavorful Punjabi traditional gravy dish featuring hint traces of raw egg yolk finishes.", tag: "nonveg", img: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=250&q=80" },
+            { name: "Butter Chicken", price: 180, desc: "Tandoori chicken shreds swimming in sweet velvet smooth fresh tomato and white honey butter cream.", tag: "nonveg", img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Chilli", price: 180, desc: "Indo-Chinese dark wok soy preparation loaded with sharp green pepper slices and ginger stalks.", tag: "nonveg", img: "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Tandoori", price: 160, desc: "Classic bone-in whole chicken leg-quarters charred elegantly over hot volcanic ember setups.", tag: "nonveg", img: "https://images.unsplash.com/photo-1617692855027-33b14f061079?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Seekh Kebab", price: 49, desc: "Finely minced skewered chicken logs infused with fresh coriander roots and roasted cumin powder.", tag: "nonveg", img: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=250&q=80" },
+            { name: "Afghani Tangri", price: 110, desc: "Creamy cashew paste layered chicken drumsticks with mild green cardamom dust crusts.", tag: "nonveg", img: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Fried", price: 180, desc: "Super crispy batter-coated golden deep-fried country style chicken pieces.", tag: "nonveg", img: "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Lollipop", price: 299, desc: "Flipped chicken wings shaped like lollipops, fried crispy and drenched in spicy Szechuan chili glaze.", tag: "nonveg", img: "https://images.unsplash.com/photo-1588168333986-50845fce0b02?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Hyderabadi Biryani", price: 170, desc: "Fragrant basmati rice layered meticulously with overnight spiced chicken using authentic Dum process.", tag: "nonveg", img: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=250&q=80" },
+            { name: "Mutton Biryani", price: 220, desc: "Elite long-grain rice crown structure packed with spice rich saffron oils and delicate lamb cutlets.", tag: "nonveg", img: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=250&q=80" }
+        ],
+        snacks: [
+            { name: "Gourmet Pizza", price: 250, desc: "Fresh thin crust base layered in rich Italian marinara tomato reduction and pull mozzarella strings.", tag: "veg", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=250&q=80" },
+            { name: "Steamed Momos", price: 60, desc: "Delicate thin wrapper purses tightly packed with mixed farm vegetables, steam processed perfectly.", tag: "veg", img: "https://images.unsplash.com/photo-1625220194771-7eb5a29f7367?auto=format&fit=crop&w=250&q=80" },
+            { name: "Veg Noodles", price: 50, desc: "Classic high-flame street style wok tossed thin noodles with fine crunchy vegetable matchsticks.", tag: "veg", img: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=250&q=80" },
+            { name: "Egg Noodles", price: 70, desc: "Wok noodles combined beautifully with thin scrambled soft farm egg layer flakes.", tag: "nonveg", img: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Noodles", price: 90, desc: "Fiery street noodles packed with deep pan-fried chicken breast strips and garlic soy drizzle.", tag: "nonveg", img: "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chilli Potato", price: 99, desc: "Crispy double-fried potato finger wedges glaze-coated in high sweet chili honey and hot pepper skin flakes.", tag: "veg", img: "https://images.unsplash.com/photo-1576107249463-5490cb2dfd08?auto=format&fit=crop&w=250&q=80" },
+            { name: "Veg Burger", price: 60, desc: "Golden toasted buns holding crunchy spiced potato herb patty with cucumber layers and soft garlic mayo creams.", tag: "veg", img: "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=250&q=80" },
+            { name: "Chicken Burger", price: 80, desc: "Crispy southern deep-fried golden spiced chicken patty nested inside premium warm sesame buns.", tag: "nonveg", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=250&q=80" }
+        ]
+    };
+
+    // Helper to generate precise card layouts matching your screenshot architecture
+    function createMenuCard(item) {
+        const dotClass = item.tag === 'veg' ? 'food-tag-veg' : 'food-tag-nonveg';
+        return `
+            <div class="glass-glow-red p-4 rounded-2xl border border-white/5 bg-surface-container/20 flex justify-between items-center transition-all duration-300 gap-4">
+                <div class="space-y-1.5 flex-1">
+                    <div class="${dotClass} w-3 h-3 rounded-sm bg-transparent flex items-center justify-center"></div>
+                    <h4 class="font-display-lg text-base md:text-lg text-white font-bold tracking-tight">${item.name}</h4>
+                    <p class="text-sm font-label-caps text-secondary font-semibold">₹${item.price}</p>
+                    <p class="text-xs text-on-surface-variant opacity-60 leading-relaxed max-w-sm line-clamp-2">${item.desc}</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 flex-shrink-0 relative">
+                    <img class="w-24 h-24 rounded-xl object-cover border border-white/10 shadow-md shadow-black/60" src="${item.img}" alt="${item.name}">
+                    <button class="absolute -bottom-2 bg-background border border-primary-container/40 hover:border-primary-container text-primary-container hover:bg-primary-container hover:text-on-primary-container text-[10px] font-label-caps font-bold px-4 py-1.5 rounded-lg shadow-lg tracking-widest transition-all duration-300 transform active:scale-95">
+                        ADD +
+                    </button>
+                </div>
+            </div>
+        `;
+    }
+
+    // Load and populate arrays into appropriate view structures
+    function loadMenu() {
+        document.getElementById('veg-menu-container').innerHTML = menuData.veg.map(createMenuCard).join('');
+        document.getElementById('nonveg-menu-container').innerHTML = menuData.nonveg.map(createMenuCard).join('');
+        document.getElementById('snacks-menu-container').innerHTML = menuData.snacks.map(createMenuCard).join('');
+    }
+
+    // Tab switcher filtering system linked directly to slider movements
+    function switchCategory(category) {
+        // Toggle Active Tabs in Slider
+        const tabs = document.querySelectorAll('.category-tab');
+        tabs.forEach(tab => tab.classList.remove('active'));
+        
+        const activeEventIndex = { 'all':0, 'veg':1, 'nonveg':2, 'snacks':3 }[category];
+        tabs[activeEventIndex].classList.add('active');
+
+        // Scroll category slider to center selected button smoothly
+        tabs[activeEventIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+        // Toggle UI Section Views
+        const sections = document.querySelectorAll('.menu-section-wrapper');
+        sections.forEach(sec => {
+            if (category === 'all' || sec.getAttribute('data-category') === category) {
+                sec.style.display = 'block';
+            } else {
+                sec.style.display = 'none';
+            }
+        });
+    }
+
+    // Instantiate layout engine initialization on document load
+    window.onload = function() {
+        loadMenu();
+        
+        // Check if the user came from a specific category on the index page
+        const targetCat = localStorage.getItem('targetCategory');
+        if (targetCat) {
+            // Switch to that category automatically
+            switchCategory(targetCat);
+            // Clear the memory so it doesn't stay locked next time they visit
+            localStorage.removeItem('targetCategory');
+        }
+    };
+</script>
+</body>
+</html>
